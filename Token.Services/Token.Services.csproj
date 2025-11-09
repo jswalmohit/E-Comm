@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Token.Common\Token.Common.csproj" />
+    <ProjectReference Include="..\Token.Common\Authentication.Common.csproj" />
   </ItemGroup>
 
 </Project>

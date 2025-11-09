@@ -15,17 +15,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EComm.Data", "..\EComm.Data
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{605363BE-8B76-4547-9D4F-7B25C70C1610}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Token", "Token", "{8CDF6A7A-4556-44B2-AA01-D7D3D000D7C7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{8CDF6A7A-4556-44B2-AA01-D7D3D000D7C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Token.Common", "Token.Common\Token.Common.csproj", "{FC039D37-9C83-4EEB-BB4E-40A5CD8D6551}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authentication.Common", "Token.Common\Authentication.Common.csproj", "{FC039D37-9C83-4EEB-BB4E-40A5CD8D6551}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Token.Api", "Token.Api\Token.Api.csproj", "{2FA907CC-4625-4215-A1F9-A0B7ABE1484E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authentication.Api", "Token.Api\Authentication.Api.csproj", "{2FA907CC-4625-4215-A1F9-A0B7ABE1484E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Token.Services", "Token.Services\Token.Services.csproj", "{411F0267-B05F-4D92-A622-BB77CC413BD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Token.Services", "Token.Services\Token.Services.csproj", "{411F0267-B05F-4D92-A622-BB77CC413BD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Token.Repository", "Token.Repository\Token.Repository.csproj", "{81FBBA19-2594-4EB9-B4A2-4D81053DD4AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authentication.Repository", "Token.Repository\Authentication.Repository.csproj", "{81FBBA19-2594-4EB9-B4A2-4D81053DD4AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cart.Repository", "Cart.Repository\Cart.Repository.csproj", "{D159929D-85DD-446B-A77A-B3D9C0F483B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cart.Repository", "Cart.Repository\Cart.Repository.csproj", "{D159929D-85DD-446B-A77A-B3D9C0F483B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
