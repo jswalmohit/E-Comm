@@ -28,10 +28,14 @@ namespace UserProfile.Repository.Implementation
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             existingUser.LoginId = user.LoginId;
 =======
             existingUser.Username = user.Username;
 >>>>>>> origin/master
+=======
+            existingUser.Username = user.Username;
+>>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
             existingUser.Username = user.Username;
 >>>>>>> 1a5c9ac (Dev mohit (#1))

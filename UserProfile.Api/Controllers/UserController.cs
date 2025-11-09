@@ -2,9 +2,12 @@
 using UserProfile.Common.Modals;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using UserProfile.Service.Interfaces;
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
 
@@ -12,6 +15,7 @@ namespace UserProfile.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public class UserController(IUserService userService) : ControllerBase
@@ -47,6 +51,8 @@ namespace UserProfile.Api.Controllers
 
             return Ok(user);
 =======
+=======
+>>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
     public class UserController : ControllerBase
@@ -102,7 +108,10 @@ namespace UserProfile.Api.Controllers
 
             return Ok(_users[id]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/master
+=======
+>>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
         }

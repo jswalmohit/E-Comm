@@ -9,6 +9,7 @@
   <ItemGroup>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.10">
       <PrivateAssets>all</PrivateAssets>
@@ -19,6 +20,8 @@
   <ItemGroup>
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
     <ProjectReference Include="..\UserProfile.Common\UserProfile.Common.csproj" />

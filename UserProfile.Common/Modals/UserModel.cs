@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace UserProfile.Common.Modals
@@ -16,12 +17,18 @@ namespace UserProfile.Common.Modals
 namespace UserProfile.Common.Modals
 {
 >>>>>>> 1a5c9ac (Dev mohit (#1))
+=======
+
+namespace UserProfile.Common.Modals
+{
+>>>>>>> 1a5c9ac (Dev mohit (#1))
     public class UserModel
     {
         [Key]
         public int Id { get; set; }
 
         [Required, MaxLength(50)]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         public string LoginId { get; set; } = string.Empty;
@@ -31,11 +38,15 @@ namespace UserProfile.Common.Modals
 =======
         public string Username { get; set; } = string.Empty;
 >>>>>>> 1a5c9ac (Dev mohit (#1))
+=======
+        public string Username { get; set; } = string.Empty;
+>>>>>>> 1a5c9ac (Dev mohit (#1))
 
         [Required, EmailAddress]
         public string Email { get; set; } = string.Empty;
 
         public string FullName { get; set; } = string.Empty;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -59,6 +70,9 @@ namespace UserProfile.Common.Modals
 =======
     }
 >>>>>>> origin/master
+=======
+    }
+>>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
     }
 >>>>>>> 1a5c9ac (Dev mohit (#1))

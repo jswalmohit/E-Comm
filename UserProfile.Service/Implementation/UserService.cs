@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using UserProfile.Common.Modals;
 =======
+=======
+>>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
 ﻿using System;
@@ -11,7 +14,10 @@ using System.Text;
 using System.Threading.Tasks;
 using UserProfile.Common.Modals;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/master
+=======
+>>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
 using UserProfile.Repository.Interfaces;
