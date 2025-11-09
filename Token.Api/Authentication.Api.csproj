@@ -15,7 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Token.Common\Authentication.Common.csproj" />
-    <ProjectReference Include="..\Token.Services\Token.Services.csproj" />
+    <ProjectReference Include="..\Token.Services\Authentication.Services.csproj" />
   </ItemGroup>
 
 </Project>

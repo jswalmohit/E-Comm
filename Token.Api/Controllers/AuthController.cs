@@ -1,4 +1,5 @@
 ﻿
+using Authentication.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Token.Common.Modals;
 using Token.Services;
@@ -8,19 +9,17 @@ namespace Token.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AuthController(ITokenService tokenService) : ControllerBase
+    public class AuthController(IUserAuthService userAuthService) : ControllerBase
     {
-        private readonly ITokenService _tokenService = tokenService;
+        private readonly IUserAuthService _userAuthService = userAuthService;
 
         [HttpPost]
         public async Task<IActionResult> GenerateJWTToken([FromBody] LoginModel login)
         {
-           string token = await _tokenService.CreateJwtToken(login.Username);
 
-            return Ok(new
-            {
-               token
-            });
+           string token = await _userAuthService.GetUserToken(login.Username, login.Password);
+
+            return Ok(token);
         }
     }
 }

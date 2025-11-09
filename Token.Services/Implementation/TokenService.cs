@@ -5,7 +5,7 @@ using System.Text;
 using Token.Services.Interfaces;
 using Microsoft.Extensions.Options;
 using Token.Common.Modals;
-namespace Token.Services
+namespace Authentication.Services.Implementation
 {
     public class TokenService(IOptions<JwtSettings> jwtSettings) : ITokenService
     {

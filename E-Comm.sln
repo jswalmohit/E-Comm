@@ -21,11 +21,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authentication.Common", "To
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authentication.Api", "Token.Api\Authentication.Api.csproj", "{2FA907CC-4625-4215-A1F9-A0B7ABE1484E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Token.Services", "Token.Services\Token.Services.csproj", "{411F0267-B05F-4D92-A622-BB77CC413BD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authentication.Services", "Token.Services\Authentication.Services.csproj", "{411F0267-B05F-4D92-A622-BB77CC413BD3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authentication.Repository", "Token.Repository\Authentication.Repository.csproj", "{81FBBA19-2594-4EB9-B4A2-4D81053DD4AF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cart.Repository", "Cart.Repository\Cart.Repository.csproj", "{D159929D-85DD-446B-A77A-B3D9C0F483B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserProfile", "UserProfile", "{2A0EC58C-4797-4AFA-9D0C-CDB3E67C6FB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
