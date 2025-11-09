@@ -1,4 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using System;
 using UserProfile.Api.Extensions;
+using UserProfile.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +14,9 @@ builder.Services.AddSwaggerGen();
 
 //regisgter dependencies
 builder.Services.AddServices();
+//configure db context
+builder.Services.AddDbContext<UserDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
