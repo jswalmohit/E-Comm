@@ -18,7 +18,6 @@
   <ItemGroup>
     <ProjectReference Include="..\UserProfile.Common\UserProfile.Common.csproj" />
     <ProjectReference Include="..\UserProfile.Data\UserProfile.Data.csproj" />
-    <ProjectReference Include="..\UserProfile.Services\UserProfile.Services.csproj" />
   </ItemGroup>
 
 </Project>

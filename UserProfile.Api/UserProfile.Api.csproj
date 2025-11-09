@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -21,7 +21,7 @@
     <ProjectReference Include="..\UserProfile.Common\UserProfile.Common.csproj" />
     <ProjectReference Include="..\UserProfile.Data\UserProfile.Data.csproj" />
     <ProjectReference Include="..\UserProfile.Repository\UserProfile.Repository.csproj" />
-    <ProjectReference Include="..\UserProfile.Services\UserProfile.Services.csproj" />
+    <ProjectReference Include="..\UserProfile.Service\UserProfile.Service.csproj" />
   </ItemGroup>
 
 </Project>

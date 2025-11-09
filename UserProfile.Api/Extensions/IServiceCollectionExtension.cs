@@ -1,7 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using UserProfile.Data;
+﻿using UserProfile.Data;
 using UserProfile.Repository.Implementation;
 using UserProfile.Repository.Interfaces;
+using UserProfile.Service.Implementation;
+using UserProfile.Service.Interfaces;
 
 namespace UserProfile.Api.Extensions
 {
@@ -10,6 +11,7 @@ namespace UserProfile.Api.Extensions
         public static void AddServices(this IServiceCollection services)
         {
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserService, UserService>();
             services.AddScoped<UserDbContext>();
         }
     }

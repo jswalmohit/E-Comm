@@ -4,14 +4,9 @@ using UserProfile.Repository.Interfaces;
 
 namespace UserProfile.Repository.Implementation
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository(UserDbContext context) : IUserRepository
     {
-        private readonly UserDbContext _context;
-
-        public UserRepository(UserDbContext context)
-        {
-            _context = context;
-        }
+        private readonly UserDbContext _context = context;
 
         public async Task<UserModel?> GetByIdAsync(int id)
         {
