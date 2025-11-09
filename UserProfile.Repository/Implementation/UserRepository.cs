@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UserProfile.Common.Modals;
+﻿using UserProfile.Common.Modals;
+using UserProfile.Data;
 using UserProfile.Repository.Interfaces;
 
 namespace UserProfile.Repository.Implementation
 {
     public class UserRepository : IUserRepository
     {
-        private readonly UserProfileDbContext _context;
+        private readonly UserDbContext _context;
 
-        public UserRepository(AppDbContext context)
+        public UserRepository(UserDbContext context)
         {
             _context = context;
         }
@@ -44,4 +40,4 @@ namespace UserProfile.Repository.Implementation
         }
     }
 }
-}
+

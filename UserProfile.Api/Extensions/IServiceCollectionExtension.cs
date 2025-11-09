@@ -10,7 +10,7 @@ namespace UserProfile.Api.Extensions
         public static void AddServices(this IServiceCollection services)
         {
             services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<UserProfileDbContext>();
+            services.AddScoped<UserDbContext>();
         }
     }
 }
