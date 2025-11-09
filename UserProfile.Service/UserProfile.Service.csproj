@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UserProfile.Common\UserProfile.Common.csproj" />
+    <ProjectReference Include="..\UserProfile.Repository\UserProfile.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

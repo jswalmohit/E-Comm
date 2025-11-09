@@ -20,7 +20,8 @@ namespace Authentication.Services.Implementation
 
         private static Task<bool> ValidateUserAsync(string username, string password)
         {
-            var isValid = username == "admin" && password == "Password@123";
+            //To make a connection with database and validate the user
+            var isValid = username == "a@a" && password == "123456";
 
             return Task.FromResult(isValid);
         }

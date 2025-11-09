@@ -1,0 +1,61 @@
+﻿UserProfile.Api/
+│
+├── Controllers/
+│   └── UserController.cs
+│
+├── Services/
+│   ├── Interfaces/
+│   │   └── IUserService.cs
+│   └── Implementations/
+│       └── UserService.cs
+│
+├── Repository/
+│   ├── Interfaces/
+│   │   └── IUserRepository.cs
+│   └── Implementations/
+│       └── UserRepository.cs
+│
+├── Data/
+│   └── AppDbContext.cs
+│
+└── Models/
+    └── UserModel.cs
+
+    ------------------------------------------Recommended Folder Structure (Clean Architecture / Layered Design)---------------------
+
+    MyApi/
+│
+├── MyApi.csproj
+├── Program.cs
+├── appsettings.json
+│
+├── Controllers/          → Entry points (HTTP endpoints)
+│    ├── UserController.cs
+│    └── ProductController.cs
+│
+├── Models/               → Data models / DTOs / entities
+│    ├── User.cs
+│    └── Product.cs
+│
+├── Data/                 → EF Core DbContext, migrations, repositories
+│    ├── AppDbContext.cs
+│    └── Migrations/
+│
+├── Services/             → Business logic, interfaces, implementations
+│    ├── IUserService.cs
+│    └── UserService.cs
+│
+├── Repositories/         → Data access logic (if using repository pattern)
+│    ├── IUserRepository.cs
+│    └── UserRepository.cs
+│
+├── DTOs/                 → Data transfer objects for API requests/responses
+│    ├── CreateUserDto.cs
+│    └── ProductDto.cs
+│
+├── Helpers/              → Utility classes, constants, extensions
+│    ├── JwtHelper.cs
+│    └── EmailHelper.cs
+│
+└── Middleware/           → Custom middleware (e.g., error handling, logging)
+     └── ExceptionMiddleware.cs

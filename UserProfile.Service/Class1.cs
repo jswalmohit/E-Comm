@@ -1,4 +1,4 @@
-﻿namespace Cart.Repository
+﻿namespace UserProfile.Service
 {
     public class Class1
     {
