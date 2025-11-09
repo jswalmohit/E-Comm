@@ -8,7 +8,7 @@ namespace Token.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TokenController(ITokenService tokenService) : ControllerBase
+    public class AuthController(ITokenService tokenService) : ControllerBase
     {
         private readonly ITokenService _tokenService = tokenService;
 
