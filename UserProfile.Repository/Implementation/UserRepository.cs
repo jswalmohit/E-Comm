@@ -27,10 +27,14 @@ namespace UserProfile.Repository.Implementation
                 return null;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             existingUser.LoginId = user.LoginId;
 =======
             existingUser.Username = user.Username;
 >>>>>>> origin/master
+=======
+            existingUser.Username = user.Username;
+>>>>>>> 1a5c9ac (Dev mohit (#1))
             existingUser.Email = user.Email;
             existingUser.FullName = user.FullName;
 

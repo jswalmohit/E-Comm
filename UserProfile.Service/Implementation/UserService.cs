@@ -1,13 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using UserProfile.Common.Modals;
 =======
+=======
+>>>>>>> 1a5c9ac (Dev mohit (#1))
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UserProfile.Common.Modals;
+<<<<<<< HEAD
 >>>>>>> origin/master
+=======
+>>>>>>> 1a5c9ac (Dev mohit (#1))
 using UserProfile.Repository.Interfaces;
 using UserProfile.Service.Interfaces;
 

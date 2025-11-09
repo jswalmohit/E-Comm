@@ -10,12 +10,15 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.10" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.10">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> 1a5c9ac (Dev mohit (#1))
   </ItemGroup>
 
   <ItemGroup>

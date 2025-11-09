@@ -1,14 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using UserProfile.Common.Modals;
 <<<<<<< HEAD
+<<<<<<< HEAD
 using UserProfile.Service.Interfaces;
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> 1a5c9ac (Dev mohit (#1))
 
 namespace UserProfile.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+<<<<<<< HEAD
 <<<<<<< HEAD
     public class UserController(IUserService userService) : ControllerBase
     {
@@ -43,6 +47,8 @@ namespace UserProfile.Api.Controllers
 
             return Ok(user);
 =======
+=======
+>>>>>>> 1a5c9ac (Dev mohit (#1))
     public class UserController : ControllerBase
     {
         // For demonstration — a temporary in-memory store
@@ -95,7 +101,10 @@ namespace UserProfile.Api.Controllers
                 return NotFound();
 
             return Ok(_users[id]);
+<<<<<<< HEAD
 >>>>>>> origin/master
+=======
+>>>>>>> 1a5c9ac (Dev mohit (#1))
         }
     }
 }

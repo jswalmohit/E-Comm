@@ -14,6 +14,7 @@ namespace UserProfile.Data
 
         public DbSet<UserModel> Users { get; set; }
 <<<<<<< HEAD
+<<<<<<< HEAD
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<UserModel>()
@@ -24,5 +25,7 @@ namespace UserProfile.Data
 
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> 1a5c9ac (Dev mohit (#1))
     }
 }
