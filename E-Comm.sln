@@ -28,6 +28,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cart.Repository", "Cart.Repository\Cart.Repository.csproj", "{D159929D-85DD-446B-A77A-B3D9C0F483B8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserProfile", "UserProfile", "{2A0EC58C-4797-4AFA-9D0C-CDB3E67C6FB0}"
+	ProjectSection(SolutionItems) = preProject
+		ProjArchitecture.txt = ProjArchitecture.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserProfile.Api", "UserProfile.Api\UserProfile.Api.csproj", "{831D56BF-D3CF-4609-A694-CA1D82247A7C}"
 EndProject
@@ -36,6 +39,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserProfile.Common", "UserProfile.Common\UserProfile.Common.csproj", "{6D200FA3-6433-46CD-9EDA-F9857435FC45}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserProfile.Repository", "UserProfile.Repository\UserProfile.Repository.csproj", "{9D5F7299-EAB2-44E5-A2C9-807725915E6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserProfile.Data", "UserProfile.Data\UserProfile.Data.csproj", "{D11370DE-A0CB-494D-820D-DD6B43EB0F61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +100,10 @@ Global
 		{9D5F7299-EAB2-44E5-A2C9-807725915E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D5F7299-EAB2-44E5-A2C9-807725915E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D5F7299-EAB2-44E5-A2C9-807725915E6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11370DE-A0CB-494D-820D-DD6B43EB0F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11370DE-A0CB-494D-820D-DD6B43EB0F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11370DE-A0CB-494D-820D-DD6B43EB0F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11370DE-A0CB-494D-820D-DD6B43EB0F61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,6 +122,7 @@ Global
 		{E16067EC-BE2E-4ADD-92E7-0F4C047FB2BC} = {2A0EC58C-4797-4AFA-9D0C-CDB3E67C6FB0}
 		{6D200FA3-6433-46CD-9EDA-F9857435FC45} = {2A0EC58C-4797-4AFA-9D0C-CDB3E67C6FB0}
 		{9D5F7299-EAB2-44E5-A2C9-807725915E6C} = {2A0EC58C-4797-4AFA-9D0C-CDB3E67C6FB0}
+		{D11370DE-A0CB-494D-820D-DD6B43EB0F61} = {2A0EC58C-4797-4AFA-9D0C-CDB3E67C6FB0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F0388A9-085E-436F-91E7-64C9BE8D34D1}

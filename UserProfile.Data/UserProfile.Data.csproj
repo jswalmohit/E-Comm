@@ -13,7 +13,12 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UserProfile.Common\UserProfile.Common.csproj" />
+    <ProjectReference Include="..\UserProfile.Repository\UserProfile.Repository.csproj" />
+    <ProjectReference Include="..\UserProfile.Services\UserProfile.Services.csproj" />
   </ItemGroup>
 
 </Project>
