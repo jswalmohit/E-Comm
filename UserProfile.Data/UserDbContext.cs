@@ -16,6 +16,7 @@ namespace UserProfile.Data
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<UserModel>()
@@ -30,5 +31,7 @@ namespace UserProfile.Data
 >>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
+=======
+>>>>>>> 94323b7 (v2)
     }
 }

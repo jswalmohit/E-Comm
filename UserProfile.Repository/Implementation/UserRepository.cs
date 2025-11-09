@@ -6,7 +6,16 @@ namespace UserProfile.Repository.Implementation
 {
     public class UserRepository(UserDbContext context) : IUserRepository
     {
+<<<<<<< HEAD
         private readonly UserDbContext _context = context;
+=======
+        private readonly UserDbContext _context;
+
+        public UserRepository(UserDbContext context)
+        {
+            _context = context;
+        }
+>>>>>>> 94323b7 (v2)
 
         public async Task<UserModel?> GetByIdAsync(int id)
         {

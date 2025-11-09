@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.10">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -22,10 +23,16 @@
 >>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
+=======
+>>>>>>> 94323b7 (v2)
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\UserProfile.Common\UserProfile.Common.csproj" />
+<<<<<<< HEAD
+=======
+    <ProjectReference Include="..\UserProfile.Services\UserProfile.Services.csproj" />
+>>>>>>> 94323b7 (v2)
   </ItemGroup>
 
 </Project>

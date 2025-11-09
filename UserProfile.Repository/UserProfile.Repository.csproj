@@ -18,6 +18,10 @@
   <ItemGroup>
     <ProjectReference Include="..\UserProfile.Common\UserProfile.Common.csproj" />
     <ProjectReference Include="..\UserProfile.Data\UserProfile.Data.csproj" />
+<<<<<<< HEAD
+=======
+    <ProjectReference Include="..\UserProfile.Services\UserProfile.Services.csproj" />
+>>>>>>> 94323b7 (v2)
   </ItemGroup>
 
 </Project>
