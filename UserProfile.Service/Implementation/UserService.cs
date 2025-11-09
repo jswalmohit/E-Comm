@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using UserProfile.Common.Modals;
 =======
 =======
@@ -20,6 +21,9 @@ using UserProfile.Common.Modals;
 >>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
+=======
+﻿using UserProfile.Common.Modals;
+>>>>>>> 2b27439 (adding migrations)
 using UserProfile.Repository.Interfaces;
 using UserProfile.Service.Interfaces;
 

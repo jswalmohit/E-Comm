@@ -3,6 +3,7 @@ using UserProfile.Common.Modals;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using UserProfile.Service.Interfaces;
 =======
 >>>>>>> origin/master
@@ -10,11 +11,15 @@ using UserProfile.Service.Interfaces;
 >>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
+=======
+using UserProfile.Service.Interfaces;
+>>>>>>> 2b27439 (adding migrations)
 
 namespace UserProfile.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -56,56 +61,40 @@ namespace UserProfile.Api.Controllers
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
     public class UserController : ControllerBase
+=======
+    public class UserController(IUserService userService) : ControllerBase
+>>>>>>> 2b27439 (adding migrations)
     {
-        // For demonstration — a temporary in-memory store
-        private static readonly Dictionary<int, UserModel> _users = new();
+        private readonly IUserService _userService = userService;
 
-        /// <summary>
-        /// Create a new user
-        /// </summary>
         [HttpPost("create")]
         public async Task<IActionResult> CreateUser([FromBody] UserModel user)
         {
-            if (user == null)
-                return BadRequest("User data is required.");
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-            if (_users.ContainsKey(user.Id))
-                return Conflict($"User with ID {user.Id} already exists.");
-
-            // Simulate async operation (e.g., database insert)
-            await Task.Delay(50);
-
-            _users[user.Id] = user;
-            return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
+            var createdUser = await _userService.CreateUserAsync(user);
+            return CreatedAtAction(nameof(GetUserById), new { id = createdUser.Id }, createdUser);
         }
 
-        /// <summary>
-        /// Update an existing user
-        /// </summary>
         [HttpPut("update/{id}")]
-        public async Task<IActionResult> UpdateUser(int id, [FromBody] UserModel updatedUser)
+        public async Task<IActionResult> UpdateUser(int id, [FromBody] UserModel user)
         {
-            if (!_users.ContainsKey(id))
+            var updatedUser = await _userService.UpdateUserAsync(id, user);
+            if (updatedUser == null)
                 return NotFound($"User with ID {id} not found.");
 
-            if (updatedUser == null)
-                return BadRequest("User data is required.");
-
-            await Task.Delay(50); // Simulate async update
-
-            _users[id] = updatedUser;
             return Ok(updatedUser);
         }
 
-        /// <summary>
-        /// Optional: Get user by ID (for CreatedAtAction link)
-        /// </summary>
         [HttpGet("{id}")]
-        public IActionResult GetUserById(int id)
+        public async Task<IActionResult> GetUserById(int id)
         {
-            if (!_users.ContainsKey(id))
+            var user = await _userService.GetUserByIdAsync(id);
+            if (user == null)
                 return NotFound();
 
+<<<<<<< HEAD
             return Ok(_users[id]);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -114,6 +103,9 @@ namespace UserProfile.Api.Controllers
 >>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
+=======
+            return Ok(user);
+>>>>>>> 2b27439 (adding migrations)
         }
     }
 }

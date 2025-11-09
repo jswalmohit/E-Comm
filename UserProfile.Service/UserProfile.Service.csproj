@@ -10,6 +10,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b27439 (adding migrations)
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.10">
       <PrivateAssets>all</PrivateAssets>
@@ -18,12 +21,15 @@
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
 =======
 >>>>>>> origin/master
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
+=======
+>>>>>>> 2b27439 (adding migrations)
     <ProjectReference Include="..\UserProfile.Common\UserProfile.Common.csproj" />
     <ProjectReference Include="..\UserProfile.Repository\UserProfile.Repository.csproj" />
   </ItemGroup>

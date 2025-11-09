@@ -21,6 +21,7 @@ namespace UserProfile.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+<<<<<<< HEAD
             modelBuilder.Entity("UserProfile.Common.Modals.LoginModel", b =>
                 {
                     b.Property<int>("Id")
@@ -35,6 +36,8 @@ namespace UserProfile.Data.Migrations
                     b.ToTable("UserCred");
                 });
 
+=======
+>>>>>>> 2b27439 (adding migrations)
             modelBuilder.Entity("UserProfile.Common.Modals.UserModel", b =>
                 {
                     b.Property<int>("Id")
@@ -51,13 +54,18 @@ namespace UserProfile.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+<<<<<<< HEAD
                     b.Property<string>("LoginId")
+=======
+                    b.Property<string>("Username")
+>>>>>>> 2b27439 (adding migrations)
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
+<<<<<<< HEAD
                     b.ToTable("UserDetails");
                 });
 
@@ -76,6 +84,9 @@ namespace UserProfile.Data.Migrations
                 {
                     b.Navigation("Credentials")
                         .IsRequired();
+=======
+                    b.ToTable("Users");
+>>>>>>> 2b27439 (adding migrations)
                 });
 #pragma warning restore 612, 618
         }

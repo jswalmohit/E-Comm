@@ -1,10 +1,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b27439 (adding migrations)
 using Microsoft.EntityFrameworkCore;
 using System;
 using UserProfile.Api.Extensions;
 using UserProfile.Data;
+<<<<<<< HEAD
 =======
 using UserProfile.Api.Extensions;
 >>>>>>> origin/master
@@ -14,6 +18,8 @@ using UserProfile.Api.Extensions;
 =======
 using UserProfile.Api.Extensions;
 >>>>>>> 1a5c9ac (Dev mohit (#1))
+=======
+>>>>>>> 2b27439 (adding migrations)
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +32,7 @@ builder.Services.AddSwaggerGen();
 
 //regisgter dependencies
 builder.Services.AddServices();
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -45,6 +52,11 @@ var app = builder.Build();
 >>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
+=======
+//configure db context
+builder.Services.AddDbContext<UserDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+>>>>>>> 2b27439 (adding migrations)
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
