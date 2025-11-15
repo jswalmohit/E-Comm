@@ -1,10 +1,48 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using UserProfile.Common.Modals;
+<<<<<<< HEAD
+using UserProfile.Service.Interfaces;
+=======
+>>>>>>> origin/master
 
 namespace UserProfile.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+<<<<<<< HEAD
+    public class UserController(IUserService userService) : ControllerBase
+    {
+        private readonly IUserService _userService = userService;
+
+        [HttpPost("create")]
+        public async Task<IActionResult> CreateUser([FromBody] UserModel user)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var createdUser = await _userService.CreateUserAsync(user);
+            return CreatedAtAction(nameof(GetUserById), new { id = createdUser.Id }, createdUser);
+        }
+
+        [HttpPut("update/{id}")]
+        public async Task<IActionResult> UpdateUser(int id, [FromBody] UserModel user)
+        {
+            var updatedUser = await _userService.UpdateUserAsync(id, user);
+            if (updatedUser == null)
+                return NotFound($"User with ID {id} not found.");
+
+            return Ok(updatedUser);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetUserById(int id)
+        {
+            var user = await _userService.GetUserByIdAsync(id);
+            if (user == null)
+                return NotFound();
+
+            return Ok(user);
+=======
     public class UserController : ControllerBase
     {
         // For demonstration — a temporary in-memory store
@@ -57,6 +95,7 @@ namespace UserProfile.Api.Controllers
                 return NotFound();
 
             return Ok(_users[id]);
+>>>>>>> origin/master
         }
     }
 }

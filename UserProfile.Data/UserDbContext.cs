@@ -13,5 +13,16 @@ namespace UserProfile.Data
         public UserDbContext(DbContextOptions<UserDbContext> options) : base(options) { }
 
         public DbSet<UserModel> Users { get; set; }
+<<<<<<< HEAD
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<UserModel>()
+                .HasOne(u => u.Credentials)
+                .WithOne(c => c.User)
+                .HasForeignKey<LoginModel>(c => c.Id);
+        }
+
+=======
+>>>>>>> origin/master
     }
 }

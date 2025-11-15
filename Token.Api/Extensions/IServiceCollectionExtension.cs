@@ -1,4 +1,5 @@
-﻿using Authentication.Services.Implementation;
+﻿using Authentication.Repository.Authentication.Data;
+using Authentication.Services.Implementation;
 using Authentication.Services.Interfaces;
 using Token.Services.Interfaces;
 
@@ -10,6 +11,7 @@ namespace Token.Api.Extensions
         {
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IUserAuthService, UserAuthService>();
+            services.AddScoped<AuthDbContext>();
         }
     }
 }

@@ -1,14 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Token.Common.Modals
 {
+    [Table("UserCred")]
     public class LoginModel
     {
-        public required string Username { get; set; }
+        [Key]
+        public required string LoginId { get; set; }
+        [MinLength(6)]
         public required string Password { get; set; }
     }
 }

@@ -1,4 +1,11 @@
+<<<<<<< HEAD
+using Microsoft.EntityFrameworkCore;
+using System;
 using UserProfile.Api.Extensions;
+using UserProfile.Data;
+=======
+using UserProfile.Api.Extensions;
+>>>>>>> origin/master
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +18,19 @@ builder.Services.AddSwaggerGen();
 
 //regisgter dependencies
 builder.Services.AddServices();
+<<<<<<< HEAD
+//configure db context
+builder.Services.AddDbContext<UserDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+//if (app.Environment.IsDevelopment())
+//{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+//}
+=======
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -19,6 +39,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+>>>>>>> origin/master
 
 app.UseHttpsRedirection();
 

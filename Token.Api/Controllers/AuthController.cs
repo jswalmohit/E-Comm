@@ -17,7 +17,7 @@ namespace Token.Api.Controllers
         public async Task<IActionResult> GenerateJWTToken([FromBody] LoginModel login)
         {
 
-           string token = await _userAuthService.GetUserToken(login.Username, login.Password);
+           string token = await _userAuthService.GetUserToken(login.LoginId, login.Password);
 
             return Ok(token);
         }

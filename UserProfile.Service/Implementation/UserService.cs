@@ -1,9 +1,13 @@
+<<<<<<< HEAD
+﻿using UserProfile.Common.Modals;
+=======
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UserProfile.Common.Modals;
+>>>>>>> origin/master
 using UserProfile.Repository.Interfaces;
 using UserProfile.Service.Interfaces;
 
