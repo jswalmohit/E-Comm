@@ -29,6 +29,7 @@ namespace UserProfile.Repository.Implementation
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             existingUser.LoginId = user.LoginId;
 =======
             existingUser.Username = user.Username;
@@ -39,6 +40,9 @@ namespace UserProfile.Repository.Implementation
 =======
             existingUser.Username = user.Username;
 >>>>>>> 1a5c9ac (Dev mohit (#1))
+=======
+            existingUser.LoginId = user.LoginId;
+>>>>>>> 14e31e8 (v2.1)
             existingUser.Email = user.Email;
             existingUser.FullName = user.FullName;
 

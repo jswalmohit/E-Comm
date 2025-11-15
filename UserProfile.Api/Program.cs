@@ -37,6 +37,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 //if (app.Environment.IsDevelopment())
 //{
+<<<<<<< HEAD
     app.UseSwagger();
     app.UseSwaggerUI();
 //}
@@ -60,6 +61,11 @@ if (app.Environment.IsDevelopment())
 >>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
+=======
+    app.UseSwagger();
+    app.UseSwaggerUI();
+//}
+>>>>>>> 14e31e8 (v2.1)
 
 app.UseHttpsRedirection();
 

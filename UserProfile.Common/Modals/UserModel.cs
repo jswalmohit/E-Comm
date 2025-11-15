@@ -2,11 +2,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 14e31e8 (v2.1)
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace UserProfile.Common.Modals
 {
     [Table("UserDetails")]
+<<<<<<< HEAD
 =======
 
 namespace UserProfile.Common.Modals
@@ -22,12 +26,15 @@ namespace UserProfile.Common.Modals
 namespace UserProfile.Common.Modals
 {
 >>>>>>> 1a5c9ac (Dev mohit (#1))
+=======
+>>>>>>> 14e31e8 (v2.1)
     public class UserModel
     {
         [Key]
         public int Id { get; set; }
 
         [Required, MaxLength(50)]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -41,6 +48,9 @@ namespace UserProfile.Common.Modals
 =======
         public string Username { get; set; } = string.Empty;
 >>>>>>> 1a5c9ac (Dev mohit (#1))
+=======
+        public string LoginId { get; set; } = string.Empty;
+>>>>>>> 14e31e8 (v2.1)
 
         [Required, EmailAddress]
         public string Email { get; set; } = string.Empty;
@@ -49,6 +59,9 @@ namespace UserProfile.Common.Modals
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 14e31e8 (v2.1)
 
         // One-to-one navigation
         public required LoginModel Credentials { get; set; }
@@ -67,6 +80,7 @@ namespace UserProfile.Common.Modals
         public UserModel User { get; set; } = null!;
     }
 
+<<<<<<< HEAD
 =======
     }
 >>>>>>> origin/master
@@ -76,4 +90,6 @@ namespace UserProfile.Common.Modals
 =======
     }
 >>>>>>> 1a5c9ac (Dev mohit (#1))
+=======
+>>>>>>> 14e31e8 (v2.1)
 }

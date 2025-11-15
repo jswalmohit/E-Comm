@@ -16,6 +16,9 @@ namespace UserProfile.Data
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 14e31e8 (v2.1)
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<UserModel>()
@@ -24,11 +27,14 @@ namespace UserProfile.Data
                 .HasForeignKey<LoginModel>(c => c.Id);
         }
 
+<<<<<<< HEAD
 =======
 >>>>>>> origin/master
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
 =======
 >>>>>>> 1a5c9ac (Dev mohit (#1))
+=======
+>>>>>>> 14e31e8 (v2.1)
     }
 }
