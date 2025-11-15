@@ -26,7 +26,11 @@ namespace UserProfile.Repository.Implementation
             if (existingUser == null)
                 return null;
 
+<<<<<<< HEAD
             existingUser.LoginId = user.LoginId;
+=======
+            existingUser.Username = user.Username;
+>>>>>>> origin/master
             existingUser.Email = user.Email;
             existingUser.FullName = user.FullName;
 
