@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UserProfile.Data;
 
@@ -10,9 +11,11 @@ using UserProfile.Data;
 namespace UserProfile.Data.Migrations
 {
     [DbContext(typeof(UserDbContext))]
-    partial class UserDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251115104732_db32507v1")]
+    partial class db32507v1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -20,20 +23,6 @@ namespace UserProfile.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("UserProfile.Common.Modals.LoginModel", b =>
-                {
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("UserCred");
-                });
 
             modelBuilder.Entity("UserProfile.Common.Modals.UserModel", b =>
                 {
@@ -51,31 +40,14 @@ namespace UserProfile.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("LoginId")
+                    b.Property<string>("Username")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("UserDetails");
-                });
-
-            modelBuilder.Entity("UserProfile.Common.Modals.LoginModel", b =>
-                {
-                    b.HasOne("UserProfile.Common.Modals.UserModel", "User")
-                        .WithOne("Credentials")
-                        .HasForeignKey("UserProfile.Common.Modals.LoginModel", "Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("UserProfile.Common.Modals.UserModel", b =>
-                {
-                    b.Navigation("Credentials")
-                        .IsRequired();
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

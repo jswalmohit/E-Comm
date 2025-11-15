@@ -3,6 +3,8 @@ using Token.Common.Modals;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
+using Authentication.Repository.Authentication.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -34,15 +36,19 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+//configure db context
+builder.Services.AddDbContext<AuthDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddServices();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
 
 app.UseHttpsRedirection();
 

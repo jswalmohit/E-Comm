@@ -26,7 +26,7 @@ namespace UserProfile.Repository.Implementation
             if (existingUser == null)
                 return null;
 
-            existingUser.Username = user.Username;
+            existingUser.LoginId = user.LoginId;
             existingUser.Email = user.Email;
             existingUser.FullName = user.FullName;
 
