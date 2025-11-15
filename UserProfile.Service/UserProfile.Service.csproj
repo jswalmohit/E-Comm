@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.10">
       <PrivateAssets>all</PrivateAssets>
@@ -16,8 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-=======
->>>>>>> origin/master
     <ProjectReference Include="..\UserProfile.Common\UserProfile.Common.csproj" />
     <ProjectReference Include="..\UserProfile.Repository\UserProfile.Repository.csproj" />
   </ItemGroup>
